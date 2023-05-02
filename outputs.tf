@@ -9,3 +9,7 @@ output "catapp_url" {
 output "catapp_ip" {
   value = "http://${azurerm_public_ip.catapp-pip.ip_address}"
 }
+
+output "prefix" {
+  value = "${var.prefix}"
+}
